@@ -1,0 +1,41 @@
+/* Center container and make image responsive */
+:root{
+	--bg: #1a0606;
+	--text: #222;
+}
+html,body{
+	height:100%;
+	margin:0;
+	font-family: Arial, Helvetica, sans-serif;
+	background:var(--bg);
+	color:var(--text);
+}
+.container{
+	min-height:100vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding:20px;
+	box-sizing:border-box;
+}
+.photo{
+	text-align:center;
+}
+.photo img{
+	max: width 100%;
+	height:auto;
+	display:block;
+	margin:0 auto;
+	border-radius:8px;
+}
+.caption{
+	margin-top:16px;
+	font-size:2rem;
+	color:#d12f1d; /* a warm red */
+	font-weight:600;
+}
+
+/* small screens */
+@media (max-width:420px){
+	.caption{font-size:1.1rem}
+}
